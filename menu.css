@@ -1,0 +1,167 @@
+/* Menu Page Styles */
+
+.menu-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/mediterraneo.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-light);
+}
+
+.menu-categories {
+    background-color: var(--bg-light);
+    padding: 1rem 0;
+    position: sticky;
+    top: 80px;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.category-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.category-nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.category-nav a:hover,
+.category-nav a.active {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+}
+
+.menu-section {
+    padding: 4rem 0;
+}
+
+.menu-section:nth-child(even) {
+    background-color: var(--bg-light);
+}
+
+.menu-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--text-color);
+    font-size: 2.5rem;
+    position: relative;
+}
+
+.menu-section h2:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 1rem auto;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.menu-item {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.menu-item-header h3 {
+    margin: 0;
+    color: var(--text-color);
+    font-size: 1.25rem;
+}
+
+.price {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.menu-item p {
+    color: var(--text-muted);
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-hero {
+        height: 40vh;
+    }
+
+    .category-nav ul {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .category-nav a {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.8rem;
+    }
+
+    .menu-section h2 {
+        font-size: 2rem;
+    }
+
+    .menu-items {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-item {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .menu-hero h1 {
+        font-size: 2rem;
+    }
+
+    .menu-section {
+        padding: 2rem 0;
+    }
+
+    .menu-section h2 {
+        font-size: 1.75rem;
+    }
+
+    .menu-item-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+} 
