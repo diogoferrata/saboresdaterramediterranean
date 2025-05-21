@@ -11,18 +11,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <a href="#" class="logo">sabores da terra</a>
-        <nav>
-            <ul>
-                <li><a href="index.html">overview</a></li>
-                <li><a href="menu.html">menu</a></li>
-                <li><a href="whats-on.html">what's on</a></li>
-                <li><a href="contact.html">contact us</a></li>
-                <li><a href="gift-cards.html">gift cards</a></li>
-            </ul>
-        </nav>
-        <button class="book-now">BOOK NOW</button>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html" id="mainLogo">sabores da terra</a>
+            </div>
+            <nav class="main-nav" id="mainNavigation">
+                <ul>
+                    <li><a href="index.html" class="active">overview</a></li>
+                    <li><a href="menu.html">menu</a></li>
+                    <li><a href="whats-on.html">what's on</a></li>
+                    <li><a href="contact.html">contact us</a></li>
+                    <li><a href="gift-cards.html">gift cards</a></li>
+                </ul>
+            </nav>
+            <div class="cta-container">
+                <a href="reservation.html" class="btn-book" id="bookNowButton">BOOK NOW</a>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
     </header>
 
     <div class="hero">
