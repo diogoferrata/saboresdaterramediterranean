@@ -82,11 +82,10 @@ nav ul li a:hover {
 
 .hero {
     height: 100vh;
-    background-image: url("./img/restaurant-bg.jpg");
+    background-image: url("./img/restaurant-bg.jpg") !important;
     background-size: cover;
     background-position: center;
-    display: flex
-;
+    display: flex;
     align-items: center;
     justify-content: center;
     color: var(--text-light);
